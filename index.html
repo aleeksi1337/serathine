@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff1f5">
+  <meta name="description" content="A tiny birthday corner made just for you.">
+  <title>happy birthday, Serah ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="floating-decor" aria-hidden="true">
+    <span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to the beginning">little corner ♡</a>
+    <span class="topbar-note">made with care, by Jewel</span>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-sticker sticker-one" aria-hidden="true">✿</div>
+      <div class="hero-sticker sticker-two" aria-hidden="true">♡</div>
+      <p class="eyebrow">OCTOBER 29 · YOUR DAY</p>
+      <h1>happy birthday,<br><span>Serah</span> ♡</h1>
+      <p class="hero-copy">A tiny corner of the internet, made just for you.</p>
+      <button class="primary-button" id="startButton" type="button">open your little gift <span>↗</span></button>
+      <p class="tiny-note">best viewed with a little bit of time and a smile</p>
+      <a class="scroll-cue" href="#note" aria-label="Scroll to the note">↓</a>
+    </section>
+
+    <section class="section intro-section" id="note">
+      <div class="section-label"><span>01</span> a little note</div>
+      <div class="paper-card reveal">
+        <span class="paper-heart" aria-hidden="true">♡</span>
+        <h2>Look at us, finding our way back.</h2>
+        <p>It's kind of funny how someone from your childhood can find their way back into your life and feel familiar in a whole new way.</p>
+        <p>I'm really glad we reconnected. Here's a small collection of things that remind me how nice it is to have you around — plus a few things I wanted you to hear on your birthday.</p>
+        <p class="signoff">— Jewel ✿</p>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-label"><span>02</span> little moments</div>
+      <div class="section-heading">
+        <h2>our tiny archive</h2>
+        <p>Some old memories, some new ones, and hopefully a lot more to come.</p>
+      </div>
+      <div class="memory-grid">
+        <figure class="memory-card tilt-left reveal">
+          <div class="photo-frame photo-placeholder" data-placeholder="childhood">
+            <img src="assets/chilldhood.jpg" alt="A childhood memory" loading="lazy">
+            <span class="photo-fallback">add a childhood photo ♡</span>
+          </div>
+          <figcaption><span class="caption-tag">the beginning</span><br>little us, before we knew much about anything.</figcaption>
+        </figure>
+        <figure class="memory-card tilt-right reveal">
+          <div class="photo-frame photo-placeholder" data-placeholder="recent">
+            <img src="assets/recent.png" alt="A recent photo or memory" loading="lazy">
+            <span class="photo-fallback">add a recent photo ♡</span>
+          </div>
+          <figcaption><span class="caption-tag">the reunion</span><br>turns out, reconnecting was a pretty good plot twist.</figcaption>
+        </figure>
+        <figure class="memory-card tilt-left reveal">
+          <div class="photo-frame photo-placeholder" data-placeholder="silly">
+            <img src="assets/silly.png" alt="A funny moment or screenshot" loading="lazy">
+            <span class="photo-fallback">add a funny memory ♡</span>
+          </div>
+          <figcaption><span class="caption-tag">the nonsense</span><br>the conversations that make absolutely no sense.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section appreciation-section" id="things">
+      <div class="section-label"><span>03</span> three little things</div>
+      <div class="section-heading">
+        <h2>things I appreciate about you</h2>
+        <p>Tap each card. No tests, I promise. (Unless you count being a professional menace.)</p>
+      </div>
+      <div class="appreciation-grid">
+        <button class="flip-card reveal" type="button" aria-expanded="false">
+          <span class="card-front"><span class="card-number">01</span><span class="card-icon">✿</span><strong>your personality</strong><small>tap to open</small></span>
+          <span class="card-back"><strong>your personality</strong><span>I like how you can be completely unserious and funny, then suddenly be genuinely thoughtful. Never stop being your own kind of you.</span></span>
+        </button>
+        <button class="flip-card reveal" type="button" aria-expanded="false">
+          <span class="card-front"><span class="card-number">02</span><span class="card-icon">☁</span><strong>how easy you are to talk to</strong><small>tap to open</small></span>
+          <span class="card-back"><strong>your company</strong><span>Talking to you feels natural. Even the random, chaotic conversations become little moments I end up appreciating.</span></span>
+        </button>
+        <button class="flip-card reveal" type="button" aria-expanded="false">
+          <span class="card-front"><span class="card-number">03</span><span class="card-icon">♡</span><strong>the way you care</strong><small>tap to open</small></span>
+          <span class="card-back"><strong>your heart</strong><span>I notice the way you make people feel appreciated. I'm glad I get to know this side of you, too.</span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section quest-section" id="quest">
+      <div class="section-label"><span>04</span> extremely important research</div>
+      <div class="quest-card reveal">
+        <div class="quest-icon" aria-hidden="true">🎮</div>
+        <p class="eyebrow">THE BIRTHDAY MINI-QUEST</p>
+        <h2>How well do you know our lore?</h2>
+        <p>Three very serious questions. The scientific community is watching.</p>
+        <div id="quiz" class="quiz">
+          <div class="quiz-question" id="quizQuestion">Question 1 of 3</div>
+          <h3 id="questionText">What is the most important birthday activity?</h3>
+          <div class="quiz-options" id="quizOptions">
+            <button type="button" class="quiz-option" data-answer="0">being iconic</button>
+            <button type="button" class="quiz-option" data-answer="1">eating something good</button>
+            <button type="button" class="quiz-option" data-answer="2">choking Jewel (lovingly)</button>
+          </div>
+          <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+          <button class="text-button hidden" id="nextQuestion" type="button">next question →</button>
+        </div>
+        <p class="quiz-disclaimer">No scores will be used against you. Probably.</p>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-label"><span>05</span> one last thing</div>
+      <div class="letter-envelope reveal" id="envelope">
+        <div class="envelope-flap" aria-hidden="true"></div>
+        <div class="envelope-content">
+          <span class="letter-stamp">for you ♡</span>
+          <h2>a birthday letter</h2>
+          <p>There's a little more I wanted to say.</p>
+          <button class="primary-button" id="openLetter" type="button">open letter ♡</button>
+        </div>
+      </div>
+
+<article class="letter-modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+  <button class="close-letter" id="closeLetter" type="button" aria-label="Close letter">×</button>
+
+  <p class="eyebrow">A LITTLE BIRTHDAY WISH</p>
+  <h2 id="letterTitle">for you, Serah ♡</h2>
+
+  <p>
+    Happy birthday, Serah. I hope this next year brings you more reasons
+    to laugh, more things to look forward to, and more moments where you
+    feel appreciated for exactly who you are.
+  </p>
+
+  <p>
+    You know, for a long time, I felt kind of numb. Hahahaha, I could
+    literally have an iPhone 15 Plus in my hands and still feel like
+    something was missing. Having nice things was cool and all, but they
+    couldn't really change how I felt every day. It was like I was just
+    going through the motions without really feeling that happy.
+  </p>
+
+  <p>
+    Then we somehow found our way back into each other's lives, and
+    things started feeling a little different. I found myself looking
+    forward to your messages, smiling at our random conversations, and
+    enjoying the little moments we share. You made my ordinary days feel
+    a little less ordinary, and honestly, I hadn't realized how much I
+    needed that.
+  </p>
+
+  <p>
+    And honestly, one of my favorite things is when we stay up in a
+    Discord VC, doing absolutely nothing, just sending each other reels
+    and laughing at them like idiots KWKWKWKWKWK. We don't even have to be
+    doing anything special. Just having you there, sharing stupid videos
+    and laughing together, is already enough to make the moment feel
+    special to me. I guess it's those little things that end up meaning
+    the most.
+  </p>
+
+  <p>
+    I guess that's one of the reasons I like you. It's not about you
+    having to fix me or being responsible for my happiness. You just came
+    back into my life being yourself, and somehow, you brought back a
+    kind of happiness I hadn't felt in a while. And I'm genuinely glad
+    it was you.
+  </p>
+
+  <p>
+    I'm grateful we got to reconnect after all those years. I enjoy your
+    company, your humor, your devotion, and even your talent for being
+    an absolute menace HAHAHAHA. Thank you for existing, for being you,
+    and for making this unexpected chapter of my life a little brighter.
+  </p>
+
+  <p>
+    You don't have to have everything figured out to deserve good things.
+    I hope life is kind to you, that you keep finding reasons to smile,
+    and that this new chapter brings you the happiness you deserve.
+  </p>
+
+  <p>
+    Here's to more memories, more nonsense, more late-night VC sessions,
+    more reels, and many more birthdays where I get to remind you how
+    appreciated you are. ♡
+  </p>
+
+  <p class="letter-signoff">
+    happy birthday again, Serah ♡<br>
+    <span>— Jewel</span>
+  </p>
+</article>
+    </section>
+
+    <section class="final-section section">
+      <div class="final-sparkle" aria-hidden="true">✦</div>
+      <p class="eyebrow">END OF TRANSMISSION</p>
+      <h2>you are very appreciated.</h2>
+      <p>Have the loveliest birthday, boi. And don't let this go to your head.</p>
+      <button class="small-button" id="confettiButton" type="button">one last surprise ✨</button>
+      <p class="tiny-note">made with care, a few lines of code, and probably too many hearts.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>made by Jewel ♡</span>
+    <a href="#home">back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
